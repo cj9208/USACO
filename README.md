@@ -1,6 +1,6 @@
 ## The following are my notes when practice USACO training.
 
-* [Dynamic Programming](http://github.com/cj9208/USACO/DP.md)
+* [Dynamic Programming](https://github.com/cj9208/USACO/blob/master/DP.md)
 * Greedy algorithms
 * Complete Search
     * remove unnecessary search (simple check)
