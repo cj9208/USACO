@@ -1,6 +1,6 @@
 This is note for dynamic programming. Here I will use pack problem as example.
 
-1. zero-one pack (each item has only one copy)
+zero-one pack (each item has only one copy)
 
 1.1 Basic notation: 
 
@@ -30,7 +30,7 @@ This is note for dynamic programming. Here I will use pack problem as example.
 
     only need to calculate f[V-sum(c[i])]...f[V], useful when V is large
     
-2. complete pack (each item has infinite copies)
+complete pack (each item has infinite copies)
 
 2.1 Reduce to zero-one pack problem
 
@@ -52,7 +52,7 @@ This is note for dynamic programming. Here I will use pack problem as example.
       
         f[v] = max(f[v], f[v-c[i]]+w[i]) 
        
-3. Multi pack (item i has n[i] copies)
+Multi pack (item i has n[i] copies)
 
 3.1 Optimization
 
@@ -64,13 +64,13 @@ This is note for dynamic programming. Here I will use pack problem as example.
 
     use monotone priority queue (to be updated)
     
-4. Combination of above three
+Combination of above three
 
     for i=1...N
     
       do update according to the type of item
       
-5. Two dimensional costs pack problem (item i has two costs, a[i], b[i])
+Two dimensional costs pack problem (item i has two costs, a[i], b[i])
 
 5.1 Solution
 
@@ -80,7 +80,7 @@ This is note for dynamic programming. Here I will use pack problem as example.
 
     regard restriction of at most m items as another costs with each item has cost 1 
     
-6. Grouped Pack (items are divided into several groups than can select at most one  item from one group)
+Grouped Pack (items are divided into several groups than can select at most one  item from one group)
 
 Solution:
 
@@ -94,7 +94,7 @@ Solution:
         
           f[v] = max(f[v], f[v-c[i]]+w[i])
           
-7. Pack problem with dependency
+Pack problem with dependency
 
 7.1 Description
 
@@ -110,13 +110,13 @@ Solution:
 
   Do a pack optimization to each extended item to find the best combination for each cost
 
-8. Extended item
+Extended item
 
 8.1 Description
 
   The extended item is a function of cost and value. This is given the item cost i, it will have value h(i)
 
-9. In practice
+In practice
 
 9.1 Output optimal strategy
 
