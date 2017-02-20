@@ -1,4 +1,4 @@
-[# Dynamic Programming](http://love-oriented.com/pack/)
+#[Dynamic Programming](http://love-oriented.com/pack/)
 
 ## zero-one pack (each item has only one copy)
 
