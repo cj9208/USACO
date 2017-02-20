@@ -1,4 +1,4 @@
-This is note for dynamic programming. Here I will use pack problem as example.
+Dynamic Programming
 
 zero-one pack (each item has only one copy)
 
@@ -109,12 +109,14 @@ Pack problem with dependency
 7.3 Optimization
 
   Do a pack optimization to each extended item to find the best combination for each cost
+  
 
 Extended item
 
 8.1 Description
 
   The extended item is a function of cost and value. This is given the item cost i, it will have value h(i)
+
 
 In practice
 
