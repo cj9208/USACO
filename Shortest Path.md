@@ -11,23 +11,23 @@
  * parent(j) is the vertex that precedes vertex j in any shortest path
  ```
 For all nodes i
- distance(i) = infinity         	# not reachable yet
- visited(i) = False
- parent(i) = nil	# no path to vertex yet 
+distance(i) = infinity         	# not reachable yet
+  visited(i) = False
+  parent(i) = nil	# no path to vertex yet 
 
 distance(source) = 0	# source -> source is start of all paths
 parent(source) = nil
 while (nodesvisited < graphsize)
- find unvisited vertex with min distance to source; call it vertex i
- assert (distance(i) != infinity, "Graph is not connected") 
+  find unvisited vertex with min distance to source; call it vertex i
+  assert (distance(i) != infinity, "Graph is not connected") 
 
 visited(i) = True	# mark vertex i as visited 
 
 # update distances of neighbors of i
 For all neighbors j of vertex i
- if distance(i) + weight(i,j) < distance(j) then
- distance(j) = distance(i) + weight(i,j)
- parent(j) = i
+  if distance(i) + weight(i,j) < distance(j) then
+  distance(j) = distance(i) + weight(i,j)
+  parent(j) = i
 ```
 
 ## Floyd-Warshall Algorithm
