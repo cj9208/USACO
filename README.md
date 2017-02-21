@@ -4,7 +4,7 @@
 * [Dynamic Programming](https://github.com/cj9208/USACO/blob/master/DP.md)
 * [Greedy algorithms](https://github.com/cj9208/USACO/blob/master/Greedy%20Algorithm.md)
 * Flood Fill
-* Shortest Path
+* [Shortest Path](https://github.com/cj9208/USACO/blob/master/Shortest%20Path.md)
 * Recursive Search Techniques
 * Minimum Spanning Tree
 * Knapsack
