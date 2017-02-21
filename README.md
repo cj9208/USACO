@@ -2,7 +2,7 @@
 
 * [Complete Search](https://github.com/cj9208/USACO/blob/master/Complete%20Search.md)
 * [Dynamic Programming](https://github.com/cj9208/USACO/blob/master/DP.md)
-* Greedy algorithms
+* [Greedy algorithms](https://github.com/cj9208/USACO/blob/master/Greedy%20Algorithm.md)
 * Flood Fill
 * Shortest Path
 * Recursive Search Techniques
