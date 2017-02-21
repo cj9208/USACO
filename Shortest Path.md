@@ -9,7 +9,7 @@
 * Pseudocode :
  * distance(j) is distance from source vertex to vertex j
  * parent(j) is the vertex that precedes vertex j in any shortest path
- ```
+```
 For all nodes i
 distance(i) = infinity         	# not reachable yet
   visited(i) = False
