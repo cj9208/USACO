@@ -24,7 +24,7 @@ inline vector<int> GetState(int feed);
 inline void AddFeed(vector<int> &state, const vector<int> feed);
 vector<int> BitToVector(int feed);
  
-// BFS,ÓÃÎ»¼ÇÂ¼ËÇÁÏ×éºÏ,×¢Òâ¼ôÖ¦
+// BFS,ç”¨ä½è®°å½•é¥²æ–™ç»„åˆ,æ³¨æ„å‰ªæ
 int main() {
   ifstream fin("holstein.in");
   ofstream fout("holstein.out");
@@ -58,11 +58,11 @@ int main() {
 }
  
 vector<int> GetMinFeed() {
-  vector<bool> is_searched(1 << type_of_feed + 1, false); // ¼ÇÂ¼ËÇÁÏ×éºÏÊÇ·ñÒÑ±»ËÑË÷µ½,×î³¤2^15 + 1
+  vector<bool> is_searched(1 << type_of_feed + 1, false); // è®°å½•é¥²æ–™ç»„åˆæ˜¯å¦å·²è¢«æœç´¢åˆ°,æœ€é•¿2^15 + 1
   deque<int> q;
   
-  int feed = 0, current_feed = 0;  // ÓÃbitÎ»À´¼ÇÂ¼ËÑË÷µ½µÄËÇÁÏ×éºÏ
-  vector<int> state, current_state; // ¼ÇÂ¼ËÇÁÏ×éºÏµÄÎ¬ËûÃüÊı
+  int feed = 0, current_feed = 0;  // ç”¨bitä½æ¥è®°å½•æœç´¢åˆ°çš„é¥²æ–™ç»„åˆ
+  vector<int> state, current_state; // è®°å½•é¥²æ–™ç»„åˆçš„ç»´ä»–å‘½æ•°
  
   while (true) {
     if (!q.empty()) {
@@ -75,8 +75,8 @@ vector<int> GetMinFeed() {
       current_feed = feed;
       current_state = state;
  
-      current_feed |= (1 << i);  // ÓÃ»òÔËËã°Ñµ±Ç°µÄËÇÁÏ¼Óµ½Ô­ÓĞµÄ×éºÏµ±ÖĞ
-      // Èç¹û»òÔËËãÖ®ºóÎ´±ä,ÔòËÑË÷µ½ÖØ¸´ËÇÁÏ, Èôµ±Ç°×éºÏÒÑ·ÃÎÊ, ÔòÒ²¿É¼ôÖ¦
+      current_feed |= (1 << i);  // ç”¨æˆ–è¿ç®—æŠŠå½“å‰çš„é¥²æ–™åŠ åˆ°åŸæœ‰çš„ç»„åˆå½“ä¸­
+      // å¦‚æœæˆ–è¿ç®—ä¹‹åæœªå˜,åˆ™æœç´¢åˆ°é‡å¤é¥²æ–™, è‹¥å½“å‰ç»„åˆå·²è®¿é—®, åˆ™ä¹Ÿå¯å‰ªæ
       if (current_feed == feed || is_searched[current_feed]) 
         continue;
  
@@ -92,7 +92,7 @@ vector<int> GetMinFeed() {
 }
  
 inline bool IsEnough(const vector<int> &feed) {
-  // ÅĞ¶ÏÒ»¸öËÇÁÏ×éºÏÊÇ·ñÂú×ãĞèÒª
+  // åˆ¤æ–­ä¸€ä¸ªé¥²æ–™ç»„åˆæ˜¯å¦æ»¡è¶³éœ€è¦
   if (feed.empty()) return false;
   for (int i = 0; i < type_of_vitamin; ++i)
     if (feed[i] < vitamin[i])
@@ -101,7 +101,7 @@ inline bool IsEnough(const vector<int> &feed) {
 }
  
 inline vector<int> GetState(int feed) {
-  // ´ÓÒ»¸öÊıÈ¡³ö¶ş½øÖÆÎ»²¢Éú³ÉËÇÁÏ×éºÏ¼°ÆäÎ¬ËûÃüÊı
+  // ä»ä¸€ä¸ªæ•°å–å‡ºäºŒè¿›åˆ¶ä½å¹¶ç”Ÿæˆé¥²æ–™ç»„åˆåŠå…¶ç»´ä»–å‘½æ•°
   vector<int> state;
   int bit = 0;
   while (feed) {
@@ -114,7 +114,7 @@ inline vector<int> GetState(int feed) {
 }
  
 inline void AddFeed(vector<int> &state, const vector<int> feed) {
-  // ½«Ò»¸öĞÂµÄËÇÁÏ¼Óµ½Ô­ÓĞµÄµÄËÇÁÏ×éºÏÖĞ²¢¼ÆËãÎ¬ËûÃüÊı
+  // å°†ä¸€ä¸ªæ–°çš„é¥²æ–™åŠ åˆ°åŸæœ‰çš„çš„é¥²æ–™ç»„åˆä¸­å¹¶è®¡ç®—ç»´ä»–å‘½æ•°
   if (state.empty()) {
     state = feed;
   } 
@@ -125,7 +125,7 @@ inline void AddFeed(vector<int> &state, const vector<int> feed) {
 }
  
 vector<int> BitToVector(int feed) {
-  // °ÑÒ»¸ö¶ş½øÖÆËÇÁÏ×éºÏ×ª»¯³ÉÊı×é,ÓÃÓÚ×îºóÊä³ö
+  // æŠŠä¸€ä¸ªäºŒè¿›åˆ¶é¥²æ–™ç»„åˆè½¬åŒ–æˆæ•°ç»„,ç”¨äºæœ€åè¾“å‡º
   vector<int> feeds;
   int bit = 0;
   while (feed) {
