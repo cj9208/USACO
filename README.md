@@ -1,12 +1,8 @@
 ## The following are my notes when practice USACO training.
 
+* [Complete Search](https://github.com/cj9208/USACO/blob/master/Complete%20Search.md)
 * [Dynamic Programming](https://github.com/cj9208/USACO/blob/master/DP.md)
 * Greedy algorithms
-* Complete Search
-    * remove unnecessary search (simple check)
-    * find efficient way to search
-    * DFS / BFS(queue)
-    * bit operation
 * Flood Fill
 * Shortest Path
 * Recursive Search Techniques
