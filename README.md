@@ -6,7 +6,7 @@
 * Flood Fill
 * [Shortest Path](https://github.com/cj9208/USACO/blob/master/Shortest%20Path.md)
 * Recursive Search Techniques
-* Minimum Spanning Tree
+* [Minimum Spanning Tree](https://github.com/cj9208/USACO/blob/master/Minimum%20Spanning%20Trees.md)
 * Knapsack
 * Computational Geometry
 * Network Flow
