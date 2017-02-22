@@ -5,7 +5,7 @@ LANG: C++
 */
 
 /*
-1.枚举每种可能
+1.脙露戮脵脙驴脰脰驴脡脛脺
 2.DFS
 3.BFS 
 	the first ansver found by BFS is optimal
