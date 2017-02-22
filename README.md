@@ -1,7 +1,7 @@
 ## The following are my notes when practice USACO training.
 
 * [Complete Search](https://github.com/cj9208/USACO/blob/master/Complete%20Search.md)
-* [Dynamic Programming](https://github.com/cj9208/USACO/blob/master/DP.md)
+* [Dynamic Programming](https://github.com/cj9208/USACO/blob/master/Dynamic%20Progrmming.md)
 * [Greedy algorithms](https://github.com/cj9208/USACO/blob/master/Greedy%20Algorithm.md)
 * Flood Fill
 * [Shortest Path](https://github.com/cj9208/USACO/blob/master/Shortest%20Path.md)
