@@ -23,13 +23,13 @@ while (nodesvisited < graphsize)
     find unvisited vertex with min distance to source; call it vertex i
     assert (distance(i) != infinity, "Graph is not connected") 
 
-visited(i) = True	# mark vertex i as visited 
+    visited(i) = True	# mark vertex i as visited 
 
-# update distances of neighbors of i
-For all neighbors j of vertex i
-    if distance(i) + weight(i,j) < distance(j) then
-    distance(j) = distance(i) + weight(i,j)
-    parent(j) = i
+    # update distances of neighbors of i
+    For all neighbors j of vertex i
+        if distance(i) + weight(i,j) < distance(j) then
+        distance(j) = distance(i) + weight(i,j)
+        parent(j) = i
 ```
 
 ## Floyd-Warshall Algorithm
