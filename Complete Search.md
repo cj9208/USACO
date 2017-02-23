@@ -9,6 +9,7 @@
   * use a queue to record the nodes to be visited
   * can be used to find the shortest path
   * Need much space
+  * eg : chapter 3.1 stamps
 * DFS + ID (run D depth first searches first, then BFS)
 
 ## Optimization
