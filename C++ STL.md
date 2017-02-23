@@ -48,6 +48,7 @@
     * access : test(i), count() (regard as function, "()", not "[]") 
     * operation : set / reset / flip
     * to_string / to_ulong / to_ullong
+    * eg : chapter 3.1 contact, change 0/1 sequence to binary 
 * [functional](http://www.cplusplus.com/reference/functional/)
     * hash
 * [string](http://www.cplusplus.com/reference/string/)
