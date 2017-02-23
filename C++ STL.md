@@ -36,12 +36,12 @@
         * support random access iterators
 
 ## [algorithm](http://www.cplusplus.com/reference/algorithm/)
-    * test / match / find / 
-    * modify
-    * sort
-    * merge 
-    * heap
-    * min/max
+* test / match / find / 
+* modify
+* sort
+* merge 
+* heap
+* min/max
 
 ## Other Libraries
 * [biset](http://www.cplusplus.com/reference/bitset/bitset/) 
@@ -50,4 +50,6 @@
     * to_string / to_ulong / to_ullong
 * [functional](http://www.cplusplus.com/reference/functional/)
     * hash
-* string
+* [string](http://www.cplusplus.com/reference/string/)
+   * convert from/to strings
+   * substr
