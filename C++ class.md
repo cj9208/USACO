@@ -58,7 +58,6 @@ Move assignment |	C& operator= (C&&);|	if no destructor, no copy constructor and
 ## friendship 
 * friend keyword : allow access from outside of class
 * friend class
-    * at the beginning of the program, there is an empty declaration of class Square. This is necessary because class Rectangle uses Square (as a parameter in member convert), and Square uses Rectangle (declaring it a friend)
     * allow to access private and protected members
     * not corresponded unless specified (A is B's friend class doesn't imple B is A's friend class)
     * not transitive: The friend of a friend is not considered a friend unless explicitly specified
@@ -103,7 +102,7 @@ class Square {
     * with private, all the base class members are inherited as private
    
 * Pointers to base class
-    * a pointer to a derived class is type-compatible with a pointer to its base class
+    * a pointer to a derived class is type-compatible with a pointer to its base class(_Polymorphism_)
     ```C++
     Rectangle rect; //Rectangle/Triangele are derived classes from Polygon
     Triangle trgl;
@@ -115,7 +114,7 @@ class Square {
 
 * Virtual members
     * can be redefined in a derived class
-    * preserve its calling properties through references (_polymorphic_)
+    * preserve its calling properties through references 
     * Non-virtual members can also be redefined in derived classes, but non-virtual members of derived classes cannot be accessed through a reference of the base class
 
 * Abstract base classes
@@ -147,7 +146,7 @@ const MyClass myobject;
 * const member function
     * Member functions specified to be const cannot modify non-static data members nor call other non-const member functions
     * In essence, const members shall not modify the state of an object
-```
+```C++
 int get() const {return x;}        // const member function
 const int& get() {return x;}       // member function returning a const&
 const int& get() const {return x;} // const member function returning a const&
