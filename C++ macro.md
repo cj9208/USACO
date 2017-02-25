@@ -15,6 +15,7 @@
 * attentions
     * A function-like macro is only expanded if its name appears with a pair of parentheses after it
     * there _cannot_ be _spaces_ between the macro name and the parentheses in the macro definition
+
 ## Macro Arguments
 ```C++
 define min(X, Y)  ((X) < (Y) ? (X) : (Y))
@@ -26,6 +27,7 @@ define min(X, Y)  ((X) < (Y) ? (X) : (Y))
     #define foo(x) x, "x"
     foo(bar)        ==> bar, "x"
     ```
+    
 ## Stringizing
 * convert a macro argument into a string constant
     * when a macro parameter is used with a leading ‘#’, the preprocessor replaces it with the literal text of the actual argument
@@ -79,6 +81,7 @@ WARN_IF (x == 0);
 #define eprintf(...) fprintf (stderr, __VA_ARGS__)
 #define eprintf(args...) fprintf (stderr, args)
 ```
+
 ## [Predefined Macros](https://gcc.gnu.org/onlinedocs/cpp/Predefined-Macros.html#Predefined-Macros)
 * Standard Predefined Macros
 * Common Predefined Macros
