@@ -90,7 +90,7 @@ WARN_IF (x == 0);
 
 ## Undefining and Redefining Macros
 * If a macro is redefined with a definition that is not effectively the same as the old one, the preprocessor issues a warning and changes the macro to use the new definition
-* not undefine a macro within macro arguments 
+* not redefine/undefine a macro within macro arguments 
 ```C++
 #undef FOO
 ```
