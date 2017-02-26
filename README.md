@@ -3,6 +3,8 @@
 * [C++ STL](https://github.com/cj9208/USACO/blob/master/C%2B%2B%20STL.md)
 * [C++ class](https://github.com/cj9208/USACO/blob/master/C++%20class.md)
 * [C++ macro](https://github.com/cj9208/USACO/blob/master/C++%20macro.md)
+* [gdb](https://github.com/cj9208/USACO/blob/master/gdb.md)
+* cmake
 * [Complete Search](https://github.com/cj9208/USACO/blob/master/Complete%20Search.md)
 * [Dynamic Programming](https://github.com/cj9208/USACO/blob/master/Dynamic%20Progrmming.md)
 * [Greedy algorithms](https://github.com/cj9208/USACO/blob/master/Greedy%20Algorithm.md)
