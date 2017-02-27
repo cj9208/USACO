@@ -10,7 +10,7 @@
 * [Greedy algorithms](https://github.com/cj9208/USACO/blob/master/Greedy%20Algorithm.md)
 * [Shortest Path](https://github.com/cj9208/USACO/blob/master/Shortest%20Path.md)
 * [Minimum Spanning Tree](https://github.com/cj9208/USACO/blob/master/Minimum%20Spanning%20Trees.md)
-* Knapsack
+* [Knapsack](https://github.com/cj9208/USACO/blob/master/Knapsack.md)
 * Computational Geometry
 * Network Flow
 * Eulerian Path
