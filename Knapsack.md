@@ -1,4 +1,4 @@
-#[Dynamic Programming](http://love-oriented.com/pack/)
+#[Knapsack Problems](http://love-oriented.com/pack/)
 
 ## zero-one pack (each item has only one copy)
 
@@ -85,11 +85,16 @@ Solution:
     * The extended item is a function of cost and value. This is given the item cost i, it will have value h(i)
 
 ## In practice
-
 * Output optimal strategy : Record the strategy during every step 
 * Output alphabetically optimal strategy : Be careful of strategy selection
 * output kth strategy : the state is k-array
 * Output number of strategies
     * simple modification :  f[v] = sum(f[v], f[v-c[i]]) 
 * Can also be solved by search
+
+## Multiple Knapsack Problems
+* There are severval knapsack to be filled
+* Solutions : 
+    * when states are too large, use Recursive Descent
+
   
